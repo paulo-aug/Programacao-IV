@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: radial-gradient(circle, #111, #000);
+    color: white;
+    text-align: center;
+    cursor: url("sword.png"), auto;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.hud {
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: crimson;
+    color: white;
+    cursor: url("sword.png"), auto;
+}
+
+button:hover {
+    background: darkred;
+}
+
+#game-area {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* inimigo */
+.enemy {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url("mask_yami.png");
+    background-size: cover;
+    animation: aparecer 0.2s ease;
+    
+}
+
+/* animação */
+@keyframes aparecer {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* efeito de clique */
+.hit {
+    animation: hitEffect 0.3s;
+}
+
+@keyframes hitEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); filter: brightness(2); }
+    100% { transform: scale(0); opacity: 0; }
+}
+
+/* rastro do mouse */
+.trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(91, 179, 219);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5;
+}
