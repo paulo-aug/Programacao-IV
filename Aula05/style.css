@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #b818d8, #d153eb);
+    color: #222;
+}
+
+/* header */
+header {
+    text-align: center;
+    background: #8908a3;
+    color: white;
+    padding: 20px;
+}
+
+/* controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* grid */
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* card */
+.card {
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* tipo */
+.type {
+    display: inline-block;
+    margin: 2px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    background: #eee;
+}
