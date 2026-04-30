@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #ff6a00;
+    padding: 15px 35px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav img {
+  width: 200px;
+}
+
+nav img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.493)),url(img/banner.png);
+    background-size: cover;
+    background-position: center top;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+main {
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    color: #ff6a00;
+    margin-bottom: 15px;
+    font-size: 30px;
+    border-bottom: 2px solid orange;
+}
+
+#sobre article{
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+#sobre p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.sobre-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-sobre{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.imagem-container{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.imagem-container img{
+    width: 100%;
+    max-width: 750px;
+    border-radius: 15px;
+    border: 3px solid orange;
+    box-shadow: 0 0 15px rgba(255,165,0,0.4);
+}
+
+.imagem-container img:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+#personagens{
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid orange;
+    box-shadow: 0 0 15px rgba(255,165,0,0.4);
+    height: 200px;
+    object-fit: cover;  
+}
+
+#poderes{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+ol, ul {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff6a00;
+}
+
+#arcos{
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+#arcos p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#arcos h3{
+    color: orange;
+}
+
+.texto-arcos{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.arcos-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#curiosidades{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+#curiosidades li{
+    font-size: 20px;
+    text-align: justify;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btnMensagem {
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: orange;
+}
+
+#saiba-mais{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+#saiba-mais p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#saiba-mais a{
+    text-decoration: none;
+    color: orange;
+}
+
+#saiba-mais a:hover{
+    color: #ff6a00;
+}
+
+footer {
+    background-color: #ff6a00;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   TEMA CLARO
+========================= */
+
+.tema-claro{
+    background-color: #f4f4f4;
+    color: #111;
+}
+
+
+.tema-claro #sobre article,
+.tema-claro #personagens,
+.tema-claro #poderes,
+.tema-claro #arcos,
+.tema-claro #curiosidades,
+.tema-claro #saiba-mais{
+    background: white;
+    color: #111;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.tema-claro .card{
+    background-color: #f8f8f8;
+    color: #111;
+}
+
+.tema-claro table{
+    background-color: white;
+    color: black;
+}
+
+.tema-claro td{
+    border: 1px solid #cccccc;
+}
+
+.tema-claro th{
+    color: white;
+}
+
+.tema-claro button{
+    background-color: #111;
+    color: white;
+}
+
+.tema-claro footer{
+    color: white;
+}
