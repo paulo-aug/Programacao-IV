@@ -1,0 +1,94 @@
+# ==========================
+# Node.js
+# ==========================
+
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output/
+
+# ==========================
+# Environment
+# ==========================
+
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Logs
+# ==========================
+
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================
+# Runtime
+# ==========================
+
+pids/
+*.pid
+*.pid.lock
+*.seed
+
+# ==========================
+# Temporary files
+# ==========================
+
+.temp/
+.tmp/
+.cache/
+
+# ==========================
+# Operating System
+# ==========================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================
+# VS Code
+# ==========================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ==========================
+# JetBrains
+# ==========================
+
+.idea/
+
+# ==========================
+# Eclipse
+# ==========================
+
+.project
+.classpath
+.settings/
+
+# ==========================
+# Other Editors
+# ==========================
+
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# ==========================
+# Reports
+# ==========================
+
+report.*.json

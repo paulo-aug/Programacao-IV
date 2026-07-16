@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Bleach Wiki</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <h1>Login</h1>
+
+    <form id="formLogin" class="form-admin">
+
+        <label>Email</label>
+
+        <input
+            type="email"
+            id="email"
+            required
+        >
+
+        <label>Senha</label>
+
+        <input
+            type="password"
+            id="senha"
+            required
+        >
+
+        <div class="botoes-form">
+
+            <button type="submit">
+                Entrar
+            </button>
+
+            <button
+                type="reset"
+                id="btnLimpar">
+                Limpar
+            </button>
+
+        </div>
+
+    </form>
+
+    <p
+        id="mensagem"
+        style="margin-top:20px;color:red;">
+    </p>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

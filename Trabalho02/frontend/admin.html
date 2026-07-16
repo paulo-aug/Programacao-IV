@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Administrativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <h1>Painel Administrativo</h1>
+
+    <button id="logout">
+        Sair
+    </button>
+
+    <form id="formPersonagem" class="form-admin">
+
+        <input type="hidden" id="id">
+
+        <label for="titulo">Título</label>
+        <input
+            type="text"
+            id="titulo"
+            placeholder="Nome do personagem"
+            required
+        >
+
+        <label for="conteudo">Descrição</label>
+        <textarea
+            id="conteudo"
+            rows="6"
+            placeholder="Descrição do personagem"
+            required
+        ></textarea>
+
+        <label for="imagem">URL da imagem</label>
+        <input
+            type="text"
+            id="imagem"
+            placeholder="https://..."
+            required
+        >
+
+        <label for="ordem">Ordem de exibição</label>
+        <input
+            type="number"
+            id="ordem"
+            min="1"
+            placeholder="1"
+            required
+        >
+
+        <div class="botoes-form">
+
+            <button type="submit">
+                Salvar Personagem
+            </button>
+
+            <button
+                type="button"
+                id="btnLimpar">
+                Limpar
+            </button>
+
+        </div>
+
+    </form>
+
+    <h2>Personagens cadastrados</h2>
+
+    <div id="lista"></div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
